@@ -1,0 +1,16 @@
+digraph "PerfmonEventSet"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PerfmonEventSet",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PerfmonGroupSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonGroupSet.html",tooltip="Structure specifying all performance monitoring event groups. "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PerfmonEventSetEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEventSetEntry.html",tooltip="Structure specifying an performance monitoring event. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="PerfmonCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonCounter.html",tooltip="Structure describing performance monitoring counter data. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PerfmonEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEvent.html",tooltip="Structure specifying an performance monitoring event. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="PerfmonEventOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEventOption.html",tooltip="Structure specifying event/counter options and their value. "];
+}

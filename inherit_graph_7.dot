@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="likwid::likwid_markerNext\lGroup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacelikwid_1_1likwid__markerNextGroup.html",tooltip="Setup performance counters for the next event set If multiple groups should be measured this function..."];
+}

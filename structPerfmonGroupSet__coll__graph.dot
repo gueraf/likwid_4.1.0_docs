@@ -1,0 +1,29 @@
+digraph "PerfmonGroupSet"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="PerfmonGroupSet",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" groups" ,fontname="Helvetica"];
+  Node2 [label="PerfmonEventSet",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEventSet.html",tooltip="Structure specifying an performance monitoring event group. "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" events" ,fontname="Helvetica"];
+  Node3 [label="PerfmonEventSetEntry",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEventSetEntry.html",tooltip="Structure specifying an performance monitoring event. "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" threadCounter" ,fontname="Helvetica"];
+  Node4 [label="PerfmonCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonCounter.html",tooltip="Structure describing performance monitoring counter data. "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" event" ,fontname="Helvetica"];
+  Node5 [label="PerfmonEvent",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEvent.html",tooltip="Structure specifying an performance monitoring event. "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" options" ,fontname="Helvetica"];
+  Node6 [label="PerfmonEventOption",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonEventOption.html",tooltip="Structure specifying event/counter options and their value. "];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" timer" ,fontname="Helvetica"];
+  Node7 [label="TimerData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structTimerData.html",tooltip="Struct defining the start and stop time of a time interval. "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" stop\nstart" ,fontname="Helvetica"];
+  Node8 [label="TscCounter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionTscCounter.html",tooltip="Struct defining the start and stop time of a time interval. "];
+  Node7 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" threads" ,fontname="Helvetica"];
+  Node9 [label="PerfmonThread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structPerfmonThread.html",tooltip="Structure specifying thread to CPU relation. "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

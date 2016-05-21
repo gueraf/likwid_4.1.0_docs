@@ -1,0 +1,7 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="likwid::likwid_markerRegister\lRegion",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interfacelikwid_1_1likwid__markerRegisterRegion.html",tooltip="Register a code region Initializes the hash table with an empty entry to reduce the overhead at likwi..."];
+}
